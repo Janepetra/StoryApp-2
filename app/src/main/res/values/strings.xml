@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">DICODING STORIES</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_login">Are you ready to share your inspiring story?</string>
+    <string name="text_login">Please log in first!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">enter your password...</string>
+    <string name="text_log_in">LOG IN</string>
+    <string name="title_signup">Please register first if you wanna share your story!</string>
+    <string name="name">Name</string>
+    <string name="text_sign_up">SIGN UP</string>
+    <string name="title_welcome">WELCOME IN DICODING STORY APP</string>
+    <string name="text_welcome">Hello guys, how was your learning journey with dicoding? is it going well? is there a story you guys wanna talk about?</string>
+    <string name="tv_name_rv">Jane Do</string>
+    <string name="light_mode">LIGHT MODE</string>
+    <string name="dark_mode">DARK MODE</string>
+    <string name="text_log_out">LOG OUT</string>
+    <string name="tv_detail_name">Jane Sirken</string>
+    <string name="tv_detail_desc">here\'s my story</string>
+    <string name="btn_add">Upload Story</string>
+    <string name="API_error_header_token">error 401</string>
+    <string name="API_error_large_payload">error 413</string>
+    <string name="please_filled_story_description">Please filled story description</string>
+    <string name="selected_photo">photo has been selected</string>
+    <string name="success_message">Your story has been successfully uploaded!</string>
+    <string name="unauthorized">You are unauthorized, please login again</string>
+    <string name="failed_to_get_photo">Failed to get photo.</string>
+    <string name="email_and_password_isBlank">Please filled Email and Password first</string>
+    <string name="email_format_is_invalid">Email format is invalid</string>
+    <string name="password_error">Password must cointain at least 8 characters</string>
+    <string name="login_success">Your account is ready. Let\'s, login and share your story!</string>
+    <string name="location">Location</string>
+    <string name="notFoundLoc">Location is not found. Try Again</string>
+</resources>

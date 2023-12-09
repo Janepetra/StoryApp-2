@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StoryApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/Primary</item>
+        <item name="colorPrimaryVariant">@color/DarkPrimary</item>
+        <item name="colorOnPrimary">@color/LightPrimary</item> //text
+        <item name="backgroundColor">@color/DarkPrimary</item>
+        <item name="colorAccent">@color/DarkPrimary</item> //icon
+    </style>
+
+    <style name="Theme.StoryApp" parent="Base.Theme.StoryApp" />
+</resources>

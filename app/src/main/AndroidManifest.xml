@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/dicoding"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StoryApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".location.ChooseLocationActivity"
+            android:exported="false" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD4GKqI_URtpT43K3PtuU_9SmkBlqzZkJM" />
+
+        <activity
+            android:name=".addstory.AddStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addstory.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.DetailStoryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".authentication.SignUpForm"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.LoginForm"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.HomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.WelcomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboard.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboard.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.storyapp"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+<!--        <uses-library android:name="org.apache.http.legacy" android:required="false"/>-->
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item
+        android:id="@+id/map_standar"
+        android:icon="@drawable/map_standar"
+        android:iconTint="@color/black"
+        android:title="standardMap"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/map_night"
+        android:icon="@drawable/map_night"
+        android:iconTint="@color/black"
+        android:title="nightMap"
+        app:showAsAction="never" />
+
+</menu>
